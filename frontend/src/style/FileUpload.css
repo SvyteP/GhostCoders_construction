@@ -1,0 +1,45 @@
+.file-upload {
+    width: 100%;
+    margin-top: 41px;
+}
+
+.dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #733FEB;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 136px;
+}
+
+.dropzone.active {
+    border-color: #733FEB;
+    background-color: #e8deff;
+}
+
+.dropzone p {
+    font-size: 22px;
+    font-family: 'Days One';
+    color: #383838;
+}
+
+.upload-icon {
+    width: 47.64px;
+    margin-right: 24px;
+}
+
+.div-description {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.description {
+    font-size: 15px;
+    font-family: 'Days One';
+    color: #383838;
+}

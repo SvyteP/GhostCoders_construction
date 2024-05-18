@@ -1,0 +1,56 @@
+.div-header {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    border-bottom: 2px solid #EDEAE9;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.div-header.dark {
+    background-color: #272727;
+}
+
+.header-logo {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.header-logo.dark {
+    color: #fff;
+}
+
+.header-name {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.header-name.dark {
+    color: #fff;
+}
+
+.header-div-switch {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-switch {
+    height: 28px;
+    width: 28px;
+}
+
+.header-switch.none {
+    display: none;
+}
+
+.div-header-logo {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+}

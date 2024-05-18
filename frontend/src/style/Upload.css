@@ -1,0 +1,13 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 140px;
+}
+
+.div-header-upload {
+    padding-top: 24px;
+    font-family: "Days One", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}

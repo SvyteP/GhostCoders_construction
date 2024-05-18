@@ -1,0 +1,41 @@
+.div-panel-container {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.panel-but1 {
+    background-color: 0;
+    width: 120px;
+    height: 46px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Days One';
+    color: #CCCCCC;
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+
+.panel-but1.disable {
+    display: none;
+}
+
+.panel-but2.disable {
+    background-color: #CCCCCC;
+}
+
+.panel-but2 {
+    width: 200px;
+    height: 52px;
+    background-color: #733FEB;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Days One';
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+}

@@ -1,0 +1,68 @@
+.div-input-block {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #CCCCCC;
+    border-radius: 40px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.input-block-img {
+    width: 450px;
+}
+
+.input-block-text {
+    font-family: 'Days One';
+    font-size: 30px;
+}
+
+.input-block-input {
+    width: 440px;
+    height: 55px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px 20px;
+}
+
+.div-input-block-child-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-input-block-child-input-child {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: flex-start;
+}
+
+.div-input-block-child-input-child:not(:first-child) {
+    margin-top: 30px;
+}
+
+.div-input-block-child-img {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-block-but {
+    width: 480px;
+    height: 50px;
+    background-color: #733FEB;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Days One';
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
