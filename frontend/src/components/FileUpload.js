@@ -6,7 +6,7 @@ import iconUploadWhite from '../image/IconUploadWhite.png';
 import { AppContext } from '../store/AppContext';
 
 const FileUpload = () => {
-  const { theme, fileUpload, setFileUpload } = useContext(AppContext);
+  const { theme, setFileUpload } = useContext(AppContext);
 
   const onDrop = useCallback(acceptedFiles => {
     setFileUpload(prevFiles => [...prevFiles, ...acceptedFiles]);
@@ -24,7 +24,7 @@ const FileUpload = () => {
         </div>
       </div>
       <div className='div-description'>
-        <span className={`description ${theme ? '' : 'dark'}`}>Допустимые форматы: pdf, xls</span>
+        <span className={`description ${theme ? '' : 'dark'}`}>Допустимые форматы: csv, xlsx</span>
       </div>
     </div>
   );

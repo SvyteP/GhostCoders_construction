@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Название Классификации</title>
+</head>
+<body>
+    <h1>Введите название для классификации</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Классифицировать</button>
+    </form>
+
+    {% if results %}
+        <h2>Результаты классификации:</h2>
+        <ul>
+            <li>
+                <strong>Код ресурса:</strong> {{ results.0.код_ресурса }}<br>
+                <strong>Название:</strong> {{ results.0.title }}<br>
+                <strong>Уверенность:</strong> {{ results.0.score }}
+            </li>
+        </ul>
+    {% endif %}
+</body>
+</html>

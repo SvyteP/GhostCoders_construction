@@ -10,7 +10,6 @@
 .file-download-item {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 20px;
     padding: 17px 22px;
     width: 100%;
@@ -19,10 +18,19 @@
     border: 1px solid #000;
     justify-content: space-between;
     column-gap: 10px;
+    transition: all .3s ease-in-out;
 }
-  
+
+.file-download-item.dark {
+    background-color: #272727;
+    border: 1px solid #fff;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
 .file-icon {
     width: 24px;
+    transition: all .3s ease-in-out;
 }
 
 .div-file-name {
@@ -32,10 +40,19 @@
     overflow: hidden;
 }
 
+.file-download {
+    transition: all .3s ease-in-out;
+}
+
 .file-name {
     font-family: "Days One", sans-serif;
     font-size: 15px;
     color: #454545;
+    transition: all .3s ease-in-out;
+}
+
+.file-name.dark {
+    color: #fff;
 }
   
 .file-remove {

@@ -11,6 +11,7 @@
 
 .input-block-img {
     width: 450px;
+    transition: all .3s ease-in-out;
 }
 
 .input-block-text {
