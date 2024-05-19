@@ -15,14 +15,9 @@ const Header = () => {
             <span className={`header-name ${theme? '': 'dark'}`}>Класификатор строительных ресурсов</span>
             <div className={`header-div-switch ${theme? '': 'dark'}`}>
                 <img 
-                    src={sun}
-                    className={`header-switch ${theme ? '' : 'none'}`} 
-                    onClick={() => setTheme(false)}
-                />
-                <img 
-                    src={moon} 
-                    className={`header-switch ${theme ? 'none' : ''}`} 
-                    onClick={() => setTheme(true)} 
+                    src={theme? sun: moon}
+                    className={`header-switch ${theme ? '' : 'dark'}`} 
+                    onClick={() => setTheme(!theme)}
                 />
             </div>
         </div>

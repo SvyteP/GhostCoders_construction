@@ -7,17 +7,17 @@ import { AppContext } from "../store/AppContext"
 
 
 const Upload:React.FC = () => {
-    const { disable } = useContext(AppContext)
+    const { theme } = useContext(AppContext)
 
     return(
         <div>
             <div className="container">
                 <div className="div-header-upload">
-                    <span className="header">Загрузить файлы</span>
+                    <span className={`header ${theme? '': 'dark'}`}>Загрузить файлы</span>
                 </div>
                 <FileUpload />
                 <File />
-                <Panel disable={disable}/>
+                <Panel/>
             </div>
         </div>
     )

@@ -9,10 +9,6 @@
     transition: all .3s ease-in-out;
 }
 
-.div-header.dark {
-    background-color: #272727;
-}
-
 .header-logo {
     font-family: 'Inter';
     font-weight: 900;
@@ -43,10 +39,7 @@
 .header-switch {
     height: 28px;
     width: 28px;
-}
-
-.header-switch.none {
-    display: none;
+    cursor: pointer;
 }
 
 .div-header-logo {

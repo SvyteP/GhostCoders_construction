@@ -1,29 +1,30 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useContext } from 'react';
 import { useDropzone } from 'react-dropzone';
 import '../style/FileUpload.css';
-import iconUpload from '../image/IconUpload.png'
+import iconUpload from '../image/IconUpload.png';
+import iconUploadWhite from '../image/IconUploadWhite.png';
+import { AppContext } from '../store/AppContext';
 
 const FileUpload = () => {
+  const { theme, fileUpload, setFileUpload } = useContext(AppContext);
+
   const onDrop = useCallback(acceptedFiles => {
-    // Обработка загруженных файлов
-    console.log(acceptedFiles);
-  }, []);
+    setFileUpload(prevFiles => [...prevFiles, ...acceptedFiles]);
+  }, [setFileUpload]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
     <div className="file-upload">
-      <div {...getRootProps()} className={`dropzone ${isDragActive ? 'active' : ''}`}>
+      <div {...getRootProps()} className={`dropzone ${isDragActive ? 'active' : ''} ${theme ? '' : 'dark'}`}>
         <input {...getInputProps()} />
-        {
-            <div style={{display: 'flex', alignItems: 'center'}}>
-            <img src={iconUpload} alt="Upload Icon" className="upload-icon" />
-            <p>Перетащите файлы сюда или нажмите, чтобы выбрать</p>
-            </div>
-        }
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={theme ? iconUpload : iconUploadWhite} alt="Upload Icon" className="upload-icon" />
+          <p>Перетащите файлы сюда или нажмите, чтобы выбрать</p>
+        </div>
       </div>
       <div className='div-description'>
-        <span className='description'>Допустимые форматы: pdf, xls</span>
+        <span className={`description ${theme ? '' : 'dark'}`}>Допустимые форматы: pdf, xls</span>
       </div>
     </div>
   );

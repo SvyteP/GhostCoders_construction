@@ -18,14 +18,7 @@
     border: none;
     background-color: transparent;
     display: block;
-}
-
-.panel-but1.disable {
-    display: none;
-}
-
-.panel-but2.disable {
-    background-color: #CCCCCC;
+    transition: all .3s ease-in-out;
 }
 
 .panel-but2 {
@@ -38,4 +31,13 @@
     color: #fff;
     border: none;
     border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.panel-but1.disable {
+    display: none;
+}
+
+.panel-but2.disable {
+    background-color: #CCCCCC;
 }

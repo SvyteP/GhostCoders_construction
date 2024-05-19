@@ -20,3 +20,15 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.home {
+    transition: all .3s ease-in-out;
+}
+
+.home.dark {
+    background-color: #272727;
+}
+
+input:focus {
+    outline: none;
+}

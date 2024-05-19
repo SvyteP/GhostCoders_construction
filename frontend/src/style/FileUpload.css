@@ -25,6 +25,11 @@
     font-size: 22px;
     font-family: 'Days One';
     color: #383838;
+    transition: all .3s ease-in-out;
+}
+
+.dropzone.dark p {
+    color: #fff;
 }
 
 .upload-icon {
@@ -42,4 +47,9 @@
     font-size: 15px;
     font-family: 'Days One';
     color: #383838;
+    transition: all .3s ease-in-out;
+}
+
+.description.dark {
+    color: #fff;
 }

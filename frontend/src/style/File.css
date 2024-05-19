@@ -24,10 +24,16 @@
     border: 1px solid #000;
     justify-content: space-between;
     column-gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.file-item.dark {
+    background-color: #272727;
 }
   
 .file-icon {
     width: 24px;
+    transition: all .3s ease-in-out;
 }
 
 .div-file-name {
@@ -35,12 +41,25 @@
     text-overflow: ellipsis;
     display: inline-block;
     overflow: hidden;
+    text-wrap: nowrap;
+    transition: all .3s ease-in-out;
+}
+
+.div-file-name.dark {
+    color: #fff;
 }
 
 .file-name {
+    text-wrap: nowrap;
     font-family: "Days One", sans-serif;
     font-size: 15px;
     color: #454545;
+    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.file-name.dark {
+    color: #fff;
 }
   
 .file-remove {
