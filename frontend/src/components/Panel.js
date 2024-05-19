@@ -18,7 +18,7 @@ const Panel = () => {
         });
 
         try {
-            const response = await fetch('https://707d-87-117-61-169.ngrok-free.app/upload/', {
+            const response = await fetch('http://127.0.0.1:8000/upload/', {
                 method: 'POST',
                 body: formData,
             });

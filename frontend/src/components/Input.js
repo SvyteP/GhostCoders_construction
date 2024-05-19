@@ -12,7 +12,7 @@ const Input = () => {
 
     const onSubmit = async () => {
         if (input !== '') {
-            const res = await fetch('https://707d-87-117-61-169.ngrok-free.app/classify/', {
+            const res = await fetch('http://127.0.0.1:8000/classify/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
